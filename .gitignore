@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Streamlit
+.streamlit/
+config.toml
+
+# Local Data (不要上傳您的個人測試紀錄)
+game_records.json
+
+# Environment Variables
+.env

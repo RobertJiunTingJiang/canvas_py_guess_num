@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>開啟猜數字遊戲</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .button {
+            display: inline-block;
+            padding: 15px 40px;
+            margin: 10px;
+            font-size: 1.2em;
+            color: white;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            border: none;
+            border-radius: 50px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        .button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+        .info {
+            margin-top: 20px;
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+        .emoji {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="emoji">🎮</div>
+        <h1>數字大冒險</h1>
+        <p>Streamlit 猜數字遊戲已準備好！</p>
+        <a href="http://localhost:8501" class="button" target="_blank">
+            🚀 開始遊戲
+        </a>
+        <div class="info">
+            <p>📍 本地地址: http://localhost:8501</p>
+            <p>🌐 網絡地址: http://192.168.0.10:8501</p>
+        </div>
+    </div>
+    <script>
+        // 自動打開遊戲
+        setTimeout(() => {
+            window.open('http://localhost:8501', '_blank');
+        }, 1000);
+    </script>
+</body>
+</html>
