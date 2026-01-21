@@ -75,8 +75,8 @@ def save_score_to_cloud(client, player_name, score):
 
 def init_game():
     """重置遊戲狀態"""
-    # 測試模式答案 (正式版請改為 random.randint(1, 100))
-    st.session_state.target_number = 6 
+    # 正式遊戲模式：1-100 隨機亂數
+    st.session_state.target_number = random.randint(1, 100) 
     
     st.session_state.count = 0
     st.session_state.current_game_history = []
